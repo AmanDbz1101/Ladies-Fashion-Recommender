@@ -4,7 +4,7 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 from tensorflow.keras.layers import GlobalMaxPool2D
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 # from tensorflow.keras.preprocessing import image 
-from PIL import Image 
+# from PIL import Image 
 import numpy as np
 from tensorflow.keras.models import Sequential
 from numpy.linalg import norm
