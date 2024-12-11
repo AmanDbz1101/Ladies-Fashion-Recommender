@@ -16,6 +16,8 @@ with open('features.pkl','rb') as file:
     feature_list = pickle.load(file)
 # file_names = pickle.load('file_names.pkl', 'rb')
 
+from datasets import load_dataset
+ds = load_dataset("yotam56/hugo_dresses_ds", split="train")
 
 
 
@@ -44,8 +46,7 @@ if uploaded_file is not None:
 
     distances, indices = neighbors.kneighbors([normalized_extracted_feature])
 
-    from datasets import load_dataset
-    ds = load_dataset("yotam56/hugo_dresses_ds", split="train")
+
 
     list = indices.flatten().tolist()
 
